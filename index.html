@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="JavaScript Calendar Component">
+
+    <title>JavaScript File Upload | Component</title>
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- necolas.github.io/normalize -->
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/cssr-restart.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/components/file-upload.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/cssr-framework.css" />
+
+    <!-- fonts.googleapis -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <main class="if__base-wrapper pad-tb-0 direction--column ">
+    <div class="vertical-inline-flex bg-651fff pad-tb-20">
+        <div class="flex__mid-container direction--column max-w-960">
+            <p class="font-family--roboto-mono color--ffffff">JavaScript File Upload</p>
+        </div>
+    </div>
+    <div class="vertical-inline-flex pad-tb-40">
+      <section class="flex__mid-container direction--column max-w-960 pad-tb-20">
+        <div class="vertical-inline-flex">
+          <form>
+            <div>
+              <label class="button-solid color--ffffff margin-tb-20" for="image_uploads">Choose images to upload</label>
+              <input class="color--ffffff" type="file" id="image_uploads" name="image_uploads" accept=".jpg, .jpeg, .png" multiple>
+            </div>
+            <div class="preview cssr-card">
+              <p>No files currently selected for upload</p>
+            </div>
+            <div class="horizontal-inline-flex justify--flex-end">
+              <button class="button-solid bg-color-magenta color--ffffff margin-tb-20">Submit</button>
+            </div>
+          </form>    
+        </div>
+      </section>
+    </div>
+  </main>
+
+<script src="./assets/js/app.js"></script>
+
+</body>
+</html>
